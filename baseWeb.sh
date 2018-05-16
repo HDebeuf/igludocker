@@ -17,7 +17,8 @@ apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-
 
 #mysql
 apt-get -y install mariadb-server mariadb-client
-
+echo 'Tigrou007'
+echo 'Tigrou007'
 
 #apache2
 apt-get -y install apache2

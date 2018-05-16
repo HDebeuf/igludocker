@@ -2,7 +2,8 @@ FROM debian:jessie-slim
 
 COPY baseWeb.sh /usr/local/bin
 
-RUN ["chmod", "+x", "/usr/local/bin/baseWeb.sh"]
+RUN ./usr/local/bin/baseWeb.sh
+
 
 ENV project-name project
 
