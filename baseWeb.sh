@@ -16,9 +16,8 @@ apt-get update
 apt-get -y install --no-install-recommends php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-gd php7.0-mcrypt php7.0-msgpack php7.0-memcached php7.0-intl php7.0-sqlite3 php7.0-gmp php7.0-geoip php7.0-mbstring php7.0-xml php7.0-zip
 
 #mysql
-apt-get -y install --no-install-recommends mariadb-server
-${DB_ROOT_PASS}
-${DB_ROOT_PASS}
+apt-get -y install --no-install-recommends mysql-server
+mysql_secure_installation
 
 #apache2
 apt-get -y install apache2
