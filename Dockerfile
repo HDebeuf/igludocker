@@ -2,7 +2,7 @@ FROM debian:jessie-slim
 
 COPY baseWeb.sh /baseWeb.sh
 
-CMD ["/baseWeb.sh"]
+ENTRYPOINT ["baseWeb.sh"]
 
 ENV project-name project
 
