@@ -1,5 +1,5 @@
 #!/bin/sh
-apt-get update && apt-get install -y openssh-server wget
+apt-get update && apt-get -y install --no-install-recommends openssh-server wget
 useradd newuser
 mkdir /var/run/sshd
 echo 'newuser:Tigrou007' | chpasswd
@@ -13,10 +13,10 @@ echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
 echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
 wget -O- https://www.dotdeb.org/dotdeb.gpg | apt-key add - apt update
 apt-get update
-apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-gd php7.0-mcrypt php7.0-msgpack php7.0-memcached php7.0-intl php7.0-sqlite3 php7.0-gmp php7.0-geoip php7.0-mbstring php7.0-xml php7.0-zip
+apt-get -y install --no-install-recommends php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-gd php7.0-mcrypt php7.0-msgpack php7.0-memcached php7.0-intl php7.0-sqlite3 php7.0-gmp php7.0-geoip php7.0-mbstring php7.0-xml php7.0-zip
 
 #mysql
-apt-get -y install mariadb-server mariadb-client
+apt-get -y install --no-install-recommends mariadb-server mariadb-client
 echo 'Tigrou007'
 echo 'Tigrou007'
 
