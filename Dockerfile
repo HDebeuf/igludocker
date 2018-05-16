@@ -1,6 +1,6 @@
 FROM debian:jessie-slim
 
-COPY baseWeb.sh /baseWeb.sh
+COPY baseWeb.sh /usr/local/bin/baseWeb.sh
 
 ENTRYPOINT ["baseWeb.sh"]
 
