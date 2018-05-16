@@ -6,5 +6,7 @@ CMD ["/baseWeb.sh"]
 
 ENV project-name project
 
-EXPOSE 22,80,3306
+EXPOSE 22/tcp
+EXPOSE 80/tcp
+EXPOSE 3306/tcp
 CMD ["/usr/sbin/sshd", "-D"]
