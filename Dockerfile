@@ -2,15 +2,15 @@ FROM debian:jessie-slim
 
 COPY baseWeb.sh /usr/local/bin
 
-ENV DB_ROOT_PASS root
-ENV DB_USER user
-ENV DB_USER_PASS root
+ENV DB_ROOT_PASS tempPass
+ENV DB_USER myuser
+ENV DB_USER_PASS tempPass
+ENV NOTVISIBLE "in users profile"
+ENV PROJECT_NAME project
 
 RUN chmod +x /usr/local/bin/baseWeb.sh
 RUN ./usr/local/bin/baseWeb.sh
 
-
-ENV project-name project
-
 EXPOSE 22/tcp
 EXPOSE 80/tcp
+EXPOSE 443/tcp
